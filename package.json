@@ -12,7 +12,7 @@
     "build:ec2": "next build && if exist ec2-build rmdir /s /q ec2-build && mkdir ec2-build && xcopy /e /i /y .next\\standalone ec2-build && xcopy /e /i /y public ec2-build\\public && xcopy /e /i /y .next\\static ec2-build\\.next\\static",
     "dev": "next dev",
     "lint": "next lint",
-    "start": "next start"
+    "start": "next start -p $PORT"
   },
   "dependencies": {
     "@emotion/is-prop-valid": "latest",
